@@ -28,7 +28,7 @@ export default function Upload(){
     
       try {
         setwait(true);
-        const res = await fetch(import.meta.env.VITE_APP_UPLOAD_URL, {         //res contain meta data wbout response 
+        const res = await fetch(`${import.meta.env.VITE_APP_API_URL}/upload`, {         //res contain meta data wbout response 
           method: "POST",
           body: formData,
           credentials:"include",
