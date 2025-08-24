@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 import BlurText from "./BlurText";
 export default function Home (){
   return(
@@ -23,8 +23,8 @@ export default function Home (){
         </div>
 <div className="redirection mt-[5%] flex justify-center md:flex-row">
     
-    <a href="/browse" className="browse transition active:scale-75  duration-400 ease-in-out   hover:bg-blue-500 hover:text-stone-100  rounded-xl bg-cyan-500 px-8 py-3  mx-3 shadow-lg outline-indigo-600 shadow-cyan-500/50">Browse</a>
-    <a href="/upload" className="upload active:scale-75 transition  duration-300 ease-in-out   hover:bg-green-600 hover:text-stone-50 rounded-xl bg-green-500 px-8 py-3 mx-3 shadow-lg shadow-green-400/70">Upload</a>
+    <Link to="/browse" className="browse transition active:scale-75  duration-400 ease-in-out   hover:bg-blue-500 hover:text-stone-100  rounded-xl bg-cyan-500 px-8 py-3  mx-3 shadow-lg outline-indigo-600 shadow-cyan-500/50">Browse</Link>
+    <Link to="/upload" className="upload active:scale-75 transition  duration-300 ease-in-out   hover:bg-green-600 hover:text-stone-50 rounded-xl bg-green-500 px-8 py-3 mx-3 shadow-lg shadow-green-400/70">Upload</Link>
       </div>
 <div className="aboutus">
     
