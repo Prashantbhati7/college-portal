@@ -50,7 +50,7 @@ passport.use(
   new GoogleStrategy({
           clientID:process.env.CLIENT_ID,
           clientSecret:process.env.CLIENT_SECRET,
-          callbackURL: "/auth/google/callback", 
+          callbackURL: "https://college-portal-fn30.onrender.com/auth/google/callback", 
           scope: ["profile", "email"],
           allowedHeaders: ["Content-Type", "Authorization"],
        },
