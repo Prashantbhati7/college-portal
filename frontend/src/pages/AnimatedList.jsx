@@ -1,5 +1,6 @@
 import { useRef, useState, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
+import {Link} from "react-router-dom";
 
 const AnimatedItem = ({ children, delay = 0, index, onMouseEnter, onClick }) => {
   const ref = useRef(null);
@@ -112,7 +113,7 @@ const AnimatedList = ({
         }}
       >
         {items.map((item, index) => (
-          <a href={`/browse/${index+1}`}            // using anchor tag to redirect to particular sem 
+          <Link to={`/browse/${index+1}`}            // using anchor tag to redirect to particular sem 
 
             key={index}
             delay={0.1}
@@ -128,7 +129,7 @@ const AnimatedList = ({
             <div className={`p-4 bg-indigo-400 mt-5 rounded-lg ${selectedIndex === index ? 'bg-indigo-700' : ''} ${itemClassName}`}>
               <p className="text-white text-center m-0">{item}</p>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
       {showGradients && (
