@@ -1,5 +1,6 @@
 import { useRef, useEffect } from "react";
 import SnackbarContent from '@mui/material/SnackbarContent';
+import {Link} from "react-router-dom";
 const Squares = ({
   direction = "right",
   speed = 1,
@@ -145,7 +146,7 @@ const Squares = ({
     };
   }, [direction, speed, borderColor, hoverFillColor, squareSize]);
   const nonoteshandle = (
-    <a className="text-blue-600" href="/browse">Back</a>
+    <Link to="/browse" className="text-blue-600">Back</Link>
   )
   return (
     <>
